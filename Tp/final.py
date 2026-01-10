@@ -86,4 +86,3 @@ else:
     plt.title("Linear Regression: Diabetes vs BMI")
     plt.legend()
     plt.show()
-    print("is it this?")

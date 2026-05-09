@@ -1,4 +1,4 @@
-#In this data set the big problem is that bp , sugar , insulin all factors are related to each othe
+#In this data set the big problem is that bp , sugar , insulin all factors are related to each other
 #That is they are giving us same results.........
 import numpy as np
 from scipy.stats import t                # Importing the t distribution static graph
@@ -122,4 +122,6 @@ plt.title('Actual vs Predicted Values')
 plt.grid(True)
 plt.legend(loc='upper right')
 plt.show()
-
+new_X = np.array([[85, 135, 80, 25]])   # shape (1,4)
+y_new = np.matmul(new_X, Beta)
+print(y_new)
